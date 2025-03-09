@@ -13,7 +13,7 @@
                 wdosboxUrl: "jsdos/wdosbox.js"
             }).ready((fs, main) => {
                 fs.extract("dukenuken3d.zip").then(() => {
-                    main(["-c", "setup.EXE"]).then(ci => {
+                    main(["-c", "duke3d.EXE"]).then(ci => {
                         window.ci = ci;
                     });
                 });
