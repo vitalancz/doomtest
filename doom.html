@@ -12,8 +12,8 @@
             Dos(document.getElementById("canvas"), {
                 wdosboxUrl: "jsdos/wdosbox.js"
             }).ready((fs, main) => {
-                fs.extract("galaga94.zip").then(() => {
-                    main(["-c", "GALAGA.EXE"]).then(ci => {
+                fs.extract("gdonkeykong.zip").then(() => {
+                    main(["-c", "donkey.BAT"]).then(ci => {
                         window.ci = ci;
                     });
                 });
