@@ -13,7 +13,7 @@
                 wdosboxUrl: "jsdos/wdosbox.js"
             }).ready((fs, main) => {
                 fs.extract("donkeykong.zip").then(() => {
-                    main(["-c", "donkey.BAT"]).then(ci => {
+                    main(["-c", "fs.BAT"]).then(ci => {
                         window.ci = ci;
                     });
                 });
