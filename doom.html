@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="../mame/style.css?sdddd">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        
+        <script type="text/javascript" src="jsdos/js-dos.js"></script>
+        <script type="text/javascript">
+            Dos(document.getElementById("canvas"), {
+                wdosboxUrl: "jsdos/wdosbox.js"
+            }).ready((fs, main) => {
+                fs.extract("doom-box.zip").then(() => {
+                    main(["-c", "install.BAT"]).then(ci => {
+                        window.ci = ci;
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
