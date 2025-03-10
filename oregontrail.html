@@ -13,7 +13,7 @@
                 wdosboxUrl: "jsdos/wdosbox.js"
             }).ready((fs, main) => {
                 fs.extract("DOOM2.zip").then(() => {
-                    main(["-c", "launch.BAT"]).then(ci => {
+                    main(["-c", "DOOM2.BAT"]).then(ci => {
                         window.ci = ci;
                     });
                 });
