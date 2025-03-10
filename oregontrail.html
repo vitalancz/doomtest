@@ -12,8 +12,8 @@
             Dos(document.getElementById("canvas"), {
                 wdosboxUrl: "jsdos/wdosbox.js"
             }).ready((fs, main) => {
-                fs.extract("oregontrail.zip").then(() => {
-                    main(["-c", "oregon.exe"]).then(ci => {
+                fs.extract("doom2.zip").then(() => {
+                    main(["-c", "doom2.exe"]).then(ci => {
                         window.ci = ci;
                     });
                 });
